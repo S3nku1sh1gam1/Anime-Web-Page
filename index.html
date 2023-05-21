@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title> My Anime Web Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.PNG"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hidemenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+				
+			</div>
+			<i class="fa fa-bars" onclick="showmenu()"></i>
+		</nav>
+
+<div class="text-box">
+	<h1> Welcome to My Anime Web Page</h1>
+	<p> Those who forgive themselves, and are able to accept their true nature... They are the strong ones!<br>
+	"Itachi Uchiha"</p>
+</div>		
+
+
+	</section>
+
+<section class="About">
+	<div class="about">
+		<img src="images/profile.jpg">
+		<h1>About Us</h1>
+		<p>Name: Mark Angelo Lazo <br>Age: 20 years old <br>Address: Mataas na Bayan, Mogpog, Marinduque<br>Hobbies: Playing online games, Playing Basketball and Table Tennis, Watching Anime.</p>
+	</div>
+
+</section>
+
+<script type="text/javascript">
+	var navLinks = document.getElementById("navLinks");
+	function showmenu(){
+		navLinks.style.right = "0";
+	}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
